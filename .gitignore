@@ -1,0 +1,35 @@
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+.DS_Store
+.idea/libraries/Gradle__com_google_guava_guava_23_0.xml
+.gitattributes
+.idea/compiler.xml
+.idea/misc.xml
+.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml
+.idea/libraries/Gradle__junit_junit_4_12.xml
+.idea/gradle.xml
+.idea/kotlinc.xml
+.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml
+.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_0_18.xml
+.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml
+.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml
+.idea/modules.xml
+.idea/modules/java-project-rpnCalculator_main.iml
+.idea/modules/java-project-rpnCalculator_test.iml
+.idea/modules/my-java-pro.iml
+.idea/modules/my-java-pro_main.iml
+.idea/modules/my-java-pro_test.iml
+.idea/workspace.xml
+.idea/modules/java-project-rpnCalculator.iml
