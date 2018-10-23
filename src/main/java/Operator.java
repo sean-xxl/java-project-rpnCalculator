@@ -1,4 +1,5 @@
 public interface Operator {
+    String INPUT_NUMBER = "number";
     String ADDITION = "+";
     String SUBTRACTION = "-";
     String MULTIPLICATION = "*";

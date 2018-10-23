@@ -55,6 +55,7 @@ public class RpnCalculatorHandler {
             default:
                 try {
                     _numbers.push( new Node( Node.Type.NUMBER, null, new BigDecimal( str ) ) );
+                    _undoStack.push( new Node( Node.Type.OPERATOR, Operator.INPUT_NUMBER, null ) );
                 }
                 catch ( NumberFormatException e )
                 {
