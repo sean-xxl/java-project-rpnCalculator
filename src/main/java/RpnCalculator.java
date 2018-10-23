@@ -10,8 +10,14 @@ public class RpnCalculator {
 
         while (input.hasNextLine())
         {
-            String line = input.nextLine();
-            String[] inputs = line.trim().length() > 0 ? line.split( " " ) : null;
+            String line = input.nextLine().trim();
+            String[] inputs = line.length() > 0 ? line.split( " " ) : null;
+
+            if ( inputs == null || inputs.length == 0 )
+            {
+                continue;
+            }
+
             for ( int i = 0; i < inputs.length; i++ )
             {
                 rpnHandler.processInput( inputs[i].toLowerCase(), i +1 );

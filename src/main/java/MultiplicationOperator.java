@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.MathContext;
 
 public class MultiplicationOperator implements BinaryOperator{
     private static MultiplicationOperator ourInstance = new MultiplicationOperator();
@@ -12,7 +13,7 @@ public class MultiplicationOperator implements BinaryOperator{
 
     @Override
     public BigDecimal execute(BigDecimal top, BigDecimal second) {
-        return second.multiply( top );
+        return second.multiply( top, MathContext.DECIMAL64 );
     }
 
     @Override

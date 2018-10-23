@@ -33,3 +33,4 @@ gradle-app.setting
 .idea/modules/my-java-pro_test.iml
 .idea/workspace.xml
 .idea/modules/java-project-rpnCalculator.iml
+.idea/vcs.xml

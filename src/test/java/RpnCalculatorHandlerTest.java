@@ -21,6 +21,39 @@ public class RpnCalculatorHandlerTest {
     }
 
     @Test
+    public void testSubtractNumbers() {
+        RpnCalculatorHandler calHandler = new RpnCalculatorHandler();
+
+        calHandler.processInput( "12", 1 );
+        calHandler.processInput( "34", 2 );
+        calHandler.processInput( "-", 3 );
+
+        assertEquals( new BigDecimal( "-22" ), calHandler.getNumbers().peek().getNumber() );
+    }
+
+    @Test
+    public void testMultiplyNumbers() {
+        RpnCalculatorHandler calHandler = new RpnCalculatorHandler();
+
+        calHandler.processInput( "12", 1 );
+        calHandler.processInput( "3", 2 );
+        calHandler.processInput( "*", 3 );
+
+        assertEquals( new BigDecimal( "36" ), calHandler.getNumbers().peek().getNumber() );
+    }
+
+    @Test
+    public void testDivideNumbers() {
+        RpnCalculatorHandler calHandler = new RpnCalculatorHandler();
+
+        calHandler.processInput( "12", 1 );
+        calHandler.processInput( "34", 2 );
+        calHandler.processInput( "/", 3 );
+
+        assertEquals( new BigDecimal( "0.3529411764705882" ), calHandler.getNumbers().peek().getNumber() );
+    }
+
+    @Test
     public void testSqrt() {
         RpnCalculatorHandler calHandler = new RpnCalculatorHandler();
 
