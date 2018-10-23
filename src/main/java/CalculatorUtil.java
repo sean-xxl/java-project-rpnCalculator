@@ -30,11 +30,12 @@ public class CalculatorUtil {
         if ( decimal.compareTo( MIN_DEC ) < 0 )
         {
             num = num.setScale(0, BigDecimal.ROUND_DOWN );
-            System.out.print( num + " " );
         }
-        else
+        else if ( decimal.toString().length() > 10 )
         {
-            System.out.print( num.setScale( 10, BigDecimal.ROUND_HALF_UP ) + " " );
+            num = num.setScale( 10, BigDecimal.ROUND_HALF_UP );
         }
+
+        System.out.print( num + " " );
     }
 }

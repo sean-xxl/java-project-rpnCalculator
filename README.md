@@ -16,17 +16,22 @@ For example:
 > clear  
 > stack:  
 
-Build
------------
-
-./gradlew build
 
 Test
 ------------
 
 ./gradlew test
 
-Run
+
+Build
 -----------
 
-./gradlew run
+./gradlew build
+
+Then we can get packet in 
+> ./build/distributions/java-project-rpnCalculator.zip  
+
+Run
+--------
+Unzip this packet and run
+> ./bin/java-project-rpnCalculator
